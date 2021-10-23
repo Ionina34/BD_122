@@ -1,7 +1,7 @@
 //#include"Print.h"
 #include<iostream>
 using namespace std;
-template<typename T>void Print(T arr[], const int n)
+template<typename T>__declspec(noinline)void Print(T arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -10,7 +10,7 @@ template<typename T>void Print(T arr[], const int n)
 	}
 	cout << endl;
 }
-template<typename T>void Print(T** arr, const int rows, const int cols)
+template<typename T>__declspec(noinline)void Print(T** arr, const int rows, const int cols)
 {
 	for (int i = 0; i < rows; i++)
 	{
